@@ -47,13 +47,6 @@ public class Matriz {
             preenchimento();
         }
 
-
-//        //Preencher tudo 0
-//        for (int i = 0; i < matriz.length; i++){
-//            for(int j = 0; j < matriz[i].length; j++){
-//                matriz[i][j] = 0;
-//            }
-//        }
     }
 
     public void mostrarMatriz() {
@@ -82,6 +75,23 @@ public class Matriz {
             }
         }
     }
+
+    public void bubbleSortPorColuna(int[][] matriz) {
+        for (int j = 0; j < matriz[0].length; j++) {
+            int n = matriz.length;
+
+            for (int i = 0; i < n - 1; i++) {
+                for (int k = 0; k < n - 1; k++) {
+                    if (matriz[k][j] > matriz[k + 1][j]) {
+                        int temp = matriz[k][j];
+                        matriz[k][j] = matriz[k + 1][j];
+                        matriz[k + 1][j] = temp;
+                    }
+                }
+            }
+        }
+    }
+
 
     public void ordenarPorVetor(int[][] vetor){
         int contagem = 0;

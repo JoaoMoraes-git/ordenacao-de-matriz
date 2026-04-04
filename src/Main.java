@@ -12,6 +12,10 @@ void main() {
     matriz.bubbleSortPorLinha(matriz.matriz);
     matriz.mostrarMatriz();
 
+    System.out.println("--Ordenação de Colunas--");
+    matriz.bubbleSortPorColuna(matriz.matriz);
+    matriz.mostrarMatriz();
+
     System.out.println("--Ordenação de Vetor--");
     matriz.ordenarPorVetor(matriz.matriz);
     matriz.mostrarMatriz();

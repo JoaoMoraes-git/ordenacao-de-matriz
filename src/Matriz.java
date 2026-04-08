@@ -92,7 +92,6 @@ public class Matriz {
         }
     }
 
-
     public void ordenarPorVetor(int[][] vetor){
         int contagem = 0;
 

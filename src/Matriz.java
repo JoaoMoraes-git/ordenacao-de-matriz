@@ -3,8 +3,6 @@ import java.util.Scanner;
 
 public class Matriz {
     int matriz[][];
-
-
     Scanner scan = new Scanner(System.in);
     Random r = new Random();
 
